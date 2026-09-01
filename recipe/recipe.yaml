@@ -2,7 +2,7 @@ schema_version: 1
 
 context:
   name: llmlingua
-  version: "0.2.2"
+  version: 0.2.2
 
 package:
   name: ${{ name|lower }}
@@ -19,7 +19,7 @@ build:
 
 requirements:
   host:
-    - python ${{ python_min }}
+    - python ${{ python_min }}.*
     - pip
     - setuptools
   run:
@@ -41,7 +41,7 @@ tests:
         - "*"
 
 about:
-  summary: To speed up LLMs' inference and enhance LLM's perceive of key information, compress the prompt and KV-Cache, which achieves up to 20x compression with minimal performance loss.
+  summary: To speed up LLMs inference and enhance LLMs perceive of key information, compress the prompt and KV-Cache, which achieves up to 20x compression with minimal performance loss.
   license: MIT
   license_file: LICENSE
   homepage: https://github.com/microsoft/LLMLingua
